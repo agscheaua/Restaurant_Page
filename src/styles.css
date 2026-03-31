@@ -1,4 +1,51 @@
-body {
-    background-color: purple;
+/* css styles for index.js
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
+:root{
+
+}
+
+.headerTab {
+  height: 11vh;
+  width: 100%; 
+  position: sticky;
+}
+
+.wrraperHeader {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex; 
+}
+
+.restaurantName {
+  font-size: 2rem;
+  align-self: center;
+  justify-self: left;  
+}
+
+.contentControl {
+  align-self: center;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto; 
+  overflow: hidden;
+}
+
+nav button {
+  font-size: 1.4rem;
+  padding: 10px;
+  overflow: hidden;
+  margin-left: 30px;
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
