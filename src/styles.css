@@ -11,13 +11,13 @@
 :root{}
 
 .headerTab {
-  height: 11vh;
-  width: 100%; 
+  height: 7vh;
+  width: 100vw; 
   position: sticky;
   border: 0px;
 }
 
-.wrraperHeader {
+.wrapperHeader {
   width: 100%;
   height: 100%;
   display: flex; 
@@ -52,4 +52,38 @@ nav button {
   background-color: #D97A2B;
   color: #FBF6F6;
   font-style: italic;
+}
+
+#content{}
+
+.home{
+  width: 100vw;
+  height: 1150px;
+  margin: 0px auto;
+}
+
+.introduction{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+div img {
+  overflow: hidden;
+}
+
+.imageContainer {
+  margin: 0px auto;
+  width: fit-content;
+}
+
+.textImage {
+  color: #D97A2B; 
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  background-color: #D97A2B; 
+  color: #FBF6F6;
+  width: 100vw;
+  vertical-align: -30px; 
 }
