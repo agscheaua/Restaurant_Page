@@ -6,9 +6,12 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  cursor: default;
 }
 
 :root{}
+
+/* header styles */
 
 .headerTab {
   height: 7vh;
@@ -58,9 +61,13 @@ nav button {
 
 nav button:hover {
   color: darkblue;
+  text-decoration-line: underline;
+  cursor: pointer;
 }
 
 #content{}
+
+/* home section styles */
 
 .home{
   width: 80vw;
@@ -125,11 +132,113 @@ div img {}
   margin: 5px 30px;
 }
 
+/* menu section styles */
+
+.menu {
+  width: 80vw;
+  margin: 0px auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.sectionTitle {
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  background-color: #D97A2B;
+  color: #FBF6F6;
+  border-bottom: 1px solid black;
+}
+
+.foodTypes {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 1px solid black ;
+  border-top: 0px;
+  background-color: #D97A2B;
+  color: #FBF6F6;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.titleName {
+  border: 1px solid black;
+  border-top: 0px;
+  width: 80%;
+  margin: 0px auto;
+  background-color: #D97A2B;
+  color: #FBF6F6;
+}
+
+.typeName,
+.typeDescription,
+.typePrice {
+  padding: 5px 30px 0px 30px;
+  font-size: 1.2rem;
+}
+
+.typeDescription {
+  padding-right: 30px;
+}
+
+.typeImage div {
+  padding: 5px 0px;
+  width: 500px;
+  margin: 0px auto;
+}
+
+.typeImage .foodImage {
+  border-radius: 10px;
+}
+
+.beefShawarma {
+  border-bottom: 0px;
+}
+
+.sideType {
+  border-top: 1px solid black;
+}
+
+/* about section */
+
+.contact {
+  width: 80vw;
+  margin: 0px auto;
+}
+
+.titleSection {
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  background-color: #D97A2B;
+  color: #FBF6F6;
+  border: 1px solid black;
+  border-top: 0px;
+}
+
+.localMeeting,
+.deliveryInfo,
+.colaborationInfo {
+  text-align: left;
+  padding: 10px;
+  font-size: 2rem;
+  background-color: #D97A2B;
+  color: #FBF6F6;
+  border-bottom: 1px solid black;
+  width: 80%;
+  margin: 0px auto;
+}
+
+/* footer styles */
+
 .footerContainer {
   height: 7vh;
   width: 100vw; 
   background-color: #D97A2B;
   border-top: 1px solid black;
+  position:fixed;
+  bottom: 0px;
 }
 
 .footerContainer div {
@@ -149,4 +258,6 @@ div a:visited {
 
 div a:hover {
   color: darkblue;
+  text-decoration-line: underline;
+  cursor: pointer;
 }
