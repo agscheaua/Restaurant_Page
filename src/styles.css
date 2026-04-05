@@ -78,11 +78,14 @@ nav button:hover {
   border: 1px solid black;
   width: 80%;
   margin: 0 auto;
+  overflow: hidden;
+
 }
 
 .imageContainer {
   margin: 0px auto;
   width: fit-content;
+  overflow: hidden;
 }
 
 .textImage {
@@ -96,8 +99,6 @@ nav button:hover {
   border-top: 1px solid black;
   margin: 0 auto;
 }
-
-.introductionStoryContainer {}
 
 .introductionStory {
   font-size: 2rem;
