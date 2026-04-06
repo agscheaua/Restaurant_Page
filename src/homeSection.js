@@ -1,7 +1,7 @@
 import homePhoto from "../images/shawarma.avif";
 
 function createHomeSection() {
-const main = document.getElementById("content");
+ const main = document.getElementById("content");
 
   const home = document.createElement("section");
   main.appendChild(home);
@@ -84,9 +84,7 @@ const main = document.getElementById("content");
       const adress = document.createElement("div");
       location.appendChild(adress);
       adress.classList.add("adress");
-      adress.textContent = "Mun. Bucharest, Str. 45 Mai, nr. 23, Sector 8";
-
-        
+      adress.textContent = "Mun. Bucharest, Str. 45 Mai, nr. 23, Sector 8"; 
 };
 
 export {createHomeSection};
