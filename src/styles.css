@@ -198,6 +198,10 @@ nav button:hover {
   padding-right: 30px;
 }
 
+.typeImage {
+  overflow: hidden;
+}
+
 .typeImage div {
   padding: 5px 0px;
   width: 500px;
@@ -262,7 +266,7 @@ nav button:hover {
   width: 100vw; 
   background-color: #D97A2B;
   border: 1px solid black;
-  position: relative;
+  position: fixed;
   bottom: 0px;
   overflow: hidden;
 }

@@ -1,5 +1,7 @@
 import "./styles.css";
-import {createHomeSection} from "./homeSection.js"
+import {createHomeSection} from "./homeSection.js";
+import {createMenuSection} from "./menuSection.js";
+import {createAboutSection} from "./aboutSection.js";
 
 function createTheSections() {
   const homeButton = document.querySelector(".homeButton");
@@ -7,6 +9,7 @@ function createTheSections() {
   const aboutButton = document.querySelector(".aboutButton");
   
   let homeSectionStatus = false;
+  let menuSectionStatus = false;
 
   homeButton.addEventListener("click", () => {
     if (homeSectionStatus === false) {
@@ -20,7 +23,13 @@ function createTheSections() {
   });
 
   menuButton.addEventListener("click", () => {
-    alert("not yet created");
+    if (menuSectionStatus === false) {
+      createMenuSection();
+      menuSectionStatus = true;
+    }
+    else{
+      return;
+    };
   });
 
   aboutButton.addEventListener("click", () => {
@@ -28,3 +37,4 @@ function createTheSections() {
   });
 };
 createTheSections();
+createAboutSection();
