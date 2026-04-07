@@ -7,25 +7,39 @@ function createTheSections() {
   const homeButton = document.querySelector(".homeButton");
   const menuButton = document.querySelector(".menuButton");
   const aboutButton = document.querySelector(".aboutButton");
+
+  const mainContent = document.getElementById("content");
   
-  let homeSectionStatus = false;
+  let homeSectionStatus = true;
   let menuSectionStatus = false;
+  let aboutSectionStatus = false;
+
+  createHomeSection();
 
   homeButton.addEventListener("click", () => {
     if (homeSectionStatus === false) {
+      while(mainContent.firstChild) {
+        mainContent.removeChild(mainContent.firstChild);
+      }; 
       createHomeSection();
       homeSectionStatus = true;
+      menuSectionStatus = false;
+      aboutSectionStatus = false;
     }
     else{
       return;
     };
-
   });
 
   menuButton.addEventListener("click", () => {
     if (menuSectionStatus === false) {
+      while(mainContent.firstChild) {
+        mainContent.removeChild(mainContent.firstChild);
+      };
       createMenuSection();
+      homeSectionStatus = false;
       menuSectionStatus = true;
+      aboutSectionStatus = false;
     }
     else{
       return;
@@ -33,8 +47,18 @@ function createTheSections() {
   });
 
   aboutButton.addEventListener("click", () => {
-    alert("not yet ready 2");
+    if (aboutSectionStatus === false) {
+      while(mainContent.firstChild) {
+        mainContent.removeChild(mainContent.firstChild);
+      };
+      createAboutSection();
+      homeSectionStatus = false;
+      menuSectionStatus = false;
+      aboutSectionStatus = true;
+    }
+    else{
+      return;
+    };
   });
 };
 createTheSections();
-createAboutSection();

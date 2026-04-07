@@ -8,7 +8,7 @@
   box-sizing: border-box;
   cursor: default;
 }
-
+ 
 :root{}
 
 /* header styles */
@@ -220,6 +220,15 @@ nav button:hover {
   border-top: 1px solid black;
 }
 
+.beveregeType,
+.sideType {
+  border-bottom: 0;
+}
+
+.beveregeSoda {
+  border-bottom: 0px;
+}
+
 /* about section */
 
 .contact {
@@ -250,6 +259,7 @@ nav button:hover {
   border-bottom: 1px solid black;
   width: 80%;
   margin: 0px auto;
+  overflow: hidden;
 }
 
 .locationContainer div {
@@ -257,6 +267,22 @@ nav button:hover {
   margin: 0px auto;
   padding-top: 10px;
   overflow: hidden;
+  display: flex;
+}
+
+.locationContainer {
+  margin: 0px auto;
+}
+
+.localMeeting,
+.deliveryInfo,
+.colaborationInfo {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.colaborationInfo { 
+  border-bottom: 0px;
 }
 
 /* footer styles */
@@ -266,7 +292,7 @@ nav button:hover {
   width: 100vw; 
   background-color: #D97A2B;
   border: 1px solid black;
-  position: fixed;
+  position: relative;
   bottom: 0px;
   overflow: hidden;
 }
